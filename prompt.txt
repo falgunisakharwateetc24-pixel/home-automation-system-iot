@@ -1,0 +1,107 @@
+Create IoT+Web Application
+
+IoT Details
+Microcontroller: ESP8266 (NodeMCU CP2102)
+Sensors: DHT11 D5 (Temperature & Humidity)
+Actuators: 16x2 LCD I2C @0x27 D1 & D2
+Relay / Appliance Switch D3
+
+Web Application
+Tech Stack
+FrontEnd: HTML & Tailwind CSS
+Backend: Express & NodeJS
+Database: Simple JSON
+
+MOST IMPORTANT
+This Web App should be Deployable at Render
+
+Project/App Name: Smart Home Automation System
+
+Web Application Features (Functionality)
+Page 1:
+Login Page, Registration Link (Name, Email, Password)
+
+Page 2: Web Dashboard (Tab 1)
+Section 1:
+Show Current Room Temperature & Humidity in Cards with Best & Large Font UI/UX Gauge/Seek Bar (Colorful)
+
+Show Graphs (Temperature and Humidity)
+
+Section 2:
+Show All Saved Records (Use Pagination)
+
+# | Temperature | Humidity | Time | Date | Action (Delete)
+
+1 | 28 'C | 45% | HH:MM AM | DD-MM-YYYY | Delete
+
+Timezone: Asia/Kolkata +5:30
+
+Page 2: Web Dashboard (Tab 2)
+Create 2 Input Text Fields
+
+Field 1: Max 16 Characters
+Field 2: Max 16 Characters
+Save Button
+Upon Save show Above Details on LCD
+
+Page 2: Web Dashboard (Tab 3)
+Add Innovative Button to Turn Appliance/Relay ON and OFF
+
+On Header Show Web App Name and Logged In User Name
+Example: Welcome Falguni
+
+Web App Theme:
+Use Gradient Colors.
+Theme Color: Indigo / Dark Blue
+IMPORTANT: Make Sure to add Light/Dark Theme Toggle
+
+Footer Text
+Developed with Love(Heart Animated Pulse Icon) by Falguni and Team. Department of ETC, SB Jain, Nagpur
+
+Hardware Output
+LCD 16x2
+
+WiFi Credentials:
+WiFi Name: ESP8266
+Password: 12345678
+
+RenderURL: Keep it blank will add after deployment
+
+In Setup
+R1: SmartHome System
+R2: WELCOME
+delay(3S)
+R1: CONNECTING TO
+R2: WiFi.........
+
+R1: CONNECTED TO
+R2: WiFi...SUCCESS
+
+In Loop
+Fetch Details from Server (LCD Data & Relay Data)
+Send Details to Server (Temperature and Humidity) Every 10 Seconds
+
+R1: ROOM TEMP
+R2: 28 'C
+delay(2s)
+R1: HUMIDITY
+R2: 45 %
+delay(2s)
+Get below details from Server
+R1: SMART DISPLAY
+R2: MyData
+delay(2s)
+Get this from Server
+R1: RELAY STATUS
+R2: ON/OFF
+delay(2s)
+
+R1 and R2 are the Rows of LCD.
+
+IMPORTANT
+Make it Responsive!
+Also Show ONLINE/OFFLINE status of ESP8266
+
+Generate Web App Codes and ESP8266 Code
+Don't do Automation Testing
+I will do Manual Testing
